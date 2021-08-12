@@ -1,0 +1,27 @@
+name: Build
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build Docker image
+        run:  make .image
+      - name: Build nice!60
+        run:  make BOARD=nice60
+      - name: Build Polarity Works BT60
+        run:  make BOARD=bt60
+      - name: Build Lily58
+        run:  make BOARD=lily58
+      - name: Build ErgoTravel
+        run:  make BOARD=ergotravel
+      - name: Archive firmware
+        uses: actions/upload-artifact@v2
+        with:
+          name: zmk-firmware
+          path: |
+            build/*.uf2
