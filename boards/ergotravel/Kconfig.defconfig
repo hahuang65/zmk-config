@@ -1,0 +1,23 @@
+if SHIELD_ERGOTRAVEL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "ErgoTravel"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ERGOTRAVEL_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "ErgoTravel Right"
+
+endif
+
+if SHIELD_ERGOTRAVEL_LEFT || SHIELD_ERGOTRAVEL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

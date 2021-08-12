@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+west build --pristine --source zmk/app --board "${BOARD}" -- -DZMK_CONFIG=/root/config && \
+  ./scripts/postprocess_firmware

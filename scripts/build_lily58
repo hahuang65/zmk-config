@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+west build --pristine --source zmk/app --board nice_nano_v2 -- -DSHIELD="${BOARD}_left" -DZMK_CONFIG=/root/config -DCONFIG_ZMK_KEYBOARD_NAME="\"Lily58\"" && \
+  BOARD=${BOARD}_left ./scripts/postprocess_firmware
+
+west build --pristine --source zmk/app --board nice_nano_v2 -- -DSHIELD="${BOARD}_right" -DZMK_CONFIG=/root/config && \
+  BOARD=${BOARD}_right ./scripts/postprocess_firmware

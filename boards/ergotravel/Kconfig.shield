@@ -1,0 +1,5 @@
+config SHIELD_ERGOTRAVEL_LEFT
+        def_bool $(shields_list_contains,ergotravel_left)
+
+config SHIELD_ERGOTRAVEL_RIGHT
+        def_bool $(shields_list_contains,ergotravel_right)

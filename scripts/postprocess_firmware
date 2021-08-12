@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mv build/zephyr/zmk.uf2 "/build/${BOARD}.uf2" && \
+chmod a+rw "/build/${BOARD}.uf2" && \
+echo -e "\e[1m\e[32mBuilt \`build/${BOARD}.uf2\`\e[0m"
