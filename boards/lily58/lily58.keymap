@@ -37,7 +37,7 @@
 &kp TAB       &kp Q      &kp W      &kp E       &kp R       &kp T                      &kp Y     &kp U       &kp I       &kp O      &kp P         &kp BSLH
 &mt LCTRL ESC &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G                      &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SINGLE_QUOTE
 &kp LSHFT     &kp Z      &kp X      &kp C       &kp V       &kp B    &kp LBKT &kp RBKT &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
-                                &mo LOWER   &kp LGUI    &kp LALT &kp BSPC &kp SPC  &kp ENTER &mo FN      &mo RAISE
+                                    &mo LOWER   &kp LGUI    &kp LALT &kp BSPC &kp SPC  &kp ENTER &mo FN      &mo RAISE
 			>;
 		};
 
