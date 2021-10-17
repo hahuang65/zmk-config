@@ -32,10 +32,10 @@
 
 		default_layer {
     bindings = <
-&kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T     &kp LBKT        &kp RBKT  &kp Y     &kp U       &kp I       &kp O      &kp P         &kp BSLH 
-&mt LCTRL ESC  &hm LGUI A &hm LALT S &hm LCTRL D  &hm LSHFT F &kp G     &kp MINUS       &kp EQUAL &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SINGLE_QUOTE 
-&mt LSHFT LPAR &kp Z      &kp X      &kp C        &kp V       &kp B     &mo WINDOW      &kp ENTER &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RPAR
-&mo BLUETOOTH  &kp LGUI   &kp LALT   &kp CAPSLOCK             &mo RAISE &kp BSPC        &kp SPC   &mo RAISE             &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
+&kp TAB        &kp Q      &kp W      &kp E        &kp R       &kp T      &kp LBKT        &kp RBKT  &kp Y     &kp U       &kp I       &kp O      &kp P         &kp BSLH 
+&mt LCTRL ESC  &hm LGUI A &hm LALT S &hm LCTRL D  &hm LSHFT F &kp G      &kp MINUS       &kp EQUAL &kp H     &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SINGLE_QUOTE 
+&mt LSHFT LPAR &kp Z      &kp X      &kp C        &kp V       &kp B      &mo RAISE       &mo RAISE &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RPAR
+&mo BLUETOOTH  &kp LGUI   &kp LALT   &kp CAPSLOCK             &mo WINDOW &kp BSPC        &kp SPC   &kp ENTER             &kp LEFT    &kp DOWN   &kp UP        &kp RIGHT
 >;
 		};
 
@@ -44,7 +44,7 @@
 &kp GRAVE &kp N1        &kp N2      &kp N3         &kp N4         &kp N5    &kp C_PREV         &kp C_NEXT       &kp N6    &kp N7         &kp N8           &kp N9        &kp N0        &trans
 &kp LBRC  &hm LGUI EXCL &hm LALT AT &hm LCTRL HASH &hm LSHFT DLLR &kp PRCNT &kp C_VOL_DN       &kp C_VOL_UP     &kp CARET &hm RSHFT AMPS &hm RCTRL STAR   &hm RALT LPAR &hm RGUI RPAR &kp RBRC
 &kp LBKT  &trans        &trans      &trans         &trans         &trans    &kp C_MUTE         &trans           &trans    &trans         &trans           &trans        &trans        &kp RBKT
-&trans    &trans        &trans      &tog RAISE                    &trans    &kp DEL            &kp C_PLAY_PAUSE &trans                   &trans           &trans        &trans        &trans
+&trans    &trans        &trans      &mo RAISE                     &trans    &kp DEL            &kp C_PLAY_PAUSE &trans                   &trans           &trans        &trans        &trans
 >;
     };
 

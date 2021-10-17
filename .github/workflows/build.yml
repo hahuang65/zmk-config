@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build Docker image
-        run:  make .image
       - name: Build nice!60
         run:  make BOARD=nice60
       - name: Build Polarity Works BT60
