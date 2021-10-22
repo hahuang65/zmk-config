@@ -50,10 +50,10 @@
 
     window_layer {
     bindings = <
-&trans &kp LA(N1) &kp LA(N2) &kp LA(N3) &trans &trans &trans              &trans        &trans    &trans    &trans    &trans    &kp LA(N0) &kp LA(BSLH)
-&trans &trans     &kp LA(S)  &kp LA(D)  &trans &trans &kp LA(MINUS)       &trans        &kp LA(H) &kp LA(J) &kp LA(K) &kp LA(L) &trans     &trans
-&trans &kp LA(Z)  &trans     &trans     &trans &trans &trans              &kp LA(ENTER) &kp LA(N) &trans    &trans    &trans    &trans     &trans
-&trans &trans     &trans     &trans            &trans &trans              &kp LA(SPC)   &trans              &trans    &trans    &trans     &trans
+&trans &kp LA(N1) &kp LA(N2) &kp LA(N3) &trans &trans &trans              &trans      &trans        &trans    &trans    &trans    &kp LA(N0) &kp LA(BSLH)
+&trans &trans     &kp LA(S)  &kp LA(D)  &trans &trans &kp LA(MINUS)       &trans      &kp LA(H)     &kp LA(J) &kp LA(K) &kp LA(L) &trans     &trans
+&trans &kp LA(Z)  &trans     &trans     &trans &trans &trans              &trans      &kp LA(N)     &trans    &trans    &trans    &trans     &trans
+&trans &trans     &trans     &trans            &trans &trans              &kp LA(SPC) &kp LA(ENTER)           &trans    &trans    &trans     &trans
 >;
     };
 
