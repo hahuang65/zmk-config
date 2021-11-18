@@ -51,8 +51,8 @@
     window_layer {
     bindings = <
 &kp LA(GRAVE) &kp LA(N1) &kp LA(N2)     &kp LA(N3)      &trans &trans &kp LA(LBKT)        &kp LA(RBKT) &trans        &trans          &trans          &trans         &kp LA(N0) &kp LA(BSLH)
-&trans        &trans     &hm LALT LA(S) &hm LCTRL LA(D) &trans &trans &kp LA(MINUS)       &trans       &kp LA(H)     &hm RSHFT LA(J) &hm RCTRL LA(K) &hm RALT LA(L) &trans     &trans
-&trans        &kp LA(Z)  &trans         &trans          &trans &trans &trans              &trans       &kp LA(N)     &trans          &trans          &trans         &trans     &trans
+&trans        &trans     &hm LALT LA(S) &trans          &trans &trans &kp LA(MINUS)       &trans       &kp LA(H)     &hm RSHFT LA(J) &hm RCTRL LA(K) &hm RALT LA(L) &trans     &trans
+&trans        &kp LA(Z)  &trans         &hm LCTRL LA(C) &trans &trans &trans              &trans       &kp LA(N)     &trans          &trans          &trans         &trans     &trans
 &trans        &trans     &trans         &trans                 &trans &trans              &kp LA(SPC)  &kp LA(ENTER)                 &trans          &trans         &trans     &trans
 >;
     };
