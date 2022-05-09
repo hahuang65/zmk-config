@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:2.5-branch
+FROM zmkfirmware/zmk-build-arm:3.0
 
 WORKDIR /root
 COPY west.yml config/west.yml
@@ -21,5 +21,8 @@ COPY boards/ergotravel config/boards/shields/ergotravel
 
 # Lily58
 COPY boards/lily58/lily58* config/
+
+# Arch36
+COPY boards/arch36 config/boards/shields/arch36
 
 CMD ./scripts/build_${BOARD}
