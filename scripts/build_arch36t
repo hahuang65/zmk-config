@@ -5,18 +5,18 @@ west build \
   --source zmk/app \
   --board nice_nano_v2 \
   -- \
-  -DSHIELD="${BOARD}_left" \
+  -DSHIELD="arch36_left" \
+  -DCONFIG_ZMK_KEYBOARD_NAME="\"Arch36T\"" \
   -DZMK_CONFIG=/root/config \
-  -DCONFIG_ZMK_KEYBOARD_NAME="\"Lily58\"" \
   && \
-  BOARD=${BOARD}_left ./scripts/postprocess_firmware
+  BOARD=arch36t_left ./scripts/postprocess_firmware
 
 west build \
   --pristine \
   --source zmk/app \
   --board nice_nano_v2 \
   -- \
-  -DSHIELD="${BOARD}_right" \
+  -DSHIELD="arch36_right" \
   -DZMK_CONFIG=/root/config \
   && \
-  BOARD=${BOARD}_right ./scripts/postprocess_firmware
+  BOARD=arch36t_right ./scripts/postprocess_firmware

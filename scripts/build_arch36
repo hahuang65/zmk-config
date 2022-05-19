@@ -3,6 +3,13 @@
 declare -a SIDES=("left" "right")
 
 for SIDE in ${SIDES[@]}; do
-  west build --pristine --source zmk/app --board nice_nano_v2 -- -DSHIELD="${BOARD}_${SIDE}" -DZMK_CONFIG=/root/config && \
+  west build \
+    --pristine \
+    --source zmk/app \
+    --board nice_nano_v2 \
+    -- \
+    -DSHIELD="${BOARD}_${SIDE}" \
+    -DZMK_CONFIG=/root/config \
+    && \
     BOARD=${BOARD}_${SIDE} ./scripts/postprocess_firmware
 done
