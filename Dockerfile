@@ -25,4 +25,7 @@ COPY boards/lily58/lily58* config/
 # Arch36
 COPY boards/arch36 config/boards/shields/arch36
 
+# Chocofi
+COPY boards/chocofi config/boards/shields/chocofi
+
 CMD ./scripts/build_${BOARD}
