@@ -17,6 +17,12 @@ jobs:
         run:  make BOARD=lily58
       - name: Build ErgoTravel
         run:  make BOARD=ergotravel
+      - name: Build Arch36
+        run:  make BOARD=arch36
+      - name: Build Arch36T
+        run:  make BOARD=arch36t
+      - name: Build Chocofi
+        run:  make BOARD=chocofi
       - name: Archive firmware
         uses: actions/upload-artifact@v2
         with:
