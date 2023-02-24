@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:3.0
+FROM zmkfirmware/zmk-build-arm:3.2
 
 WORKDIR /root
 COPY west.yml config/west.yml
