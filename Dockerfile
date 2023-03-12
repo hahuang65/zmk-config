@@ -28,4 +28,7 @@ COPY boards/arch36 config/boards/shields/arch36
 # Chocofi
 COPY boards/chocofi config/boards/shields/chocofi
 
+# Corneish-Zen
+COPY boards/corneish-zen/corneish_zen* config/
+
 CMD ./scripts/build_${BOARD}
