@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: bravekarma
+      url-base: https://github.com/caksoylar
+  projects:
+    - name: zmk
+      remote: bravekarma
+      revision: caksoylar/zen-v2 # https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a
+      import: app/west.yml
+  self:
+    path: config

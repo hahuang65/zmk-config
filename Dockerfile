@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:3.2
+FROM zmkfirmware/zmk-build-arm:stable
 
 WORKDIR /root
 COPY west.yml config/west.yml
@@ -9,6 +9,8 @@ RUN west zephyr-export
 
 COPY scripts/* scripts/
 RUN chmod +x scripts/*
+
+COPY common/* config/
 
 # nice!60
 COPY boards/nice60/nice60* config/
