@@ -1,7 +1,9 @@
 FROM zmkfirmware/zmk-build-arm:stable
 
+ARG WEST_CONFIG=west.yml
+
 WORKDIR /root
-COPY west.yml config/west.yml
+COPY ${WEST_CONFIG} config/west.yml
 
 RUN west init --local config
 RUN west update
