@@ -23,12 +23,12 @@
   combos {
     compatible = "zmk,combos";
 
-COMBO(lpar,   &kp LPAR,     11 12, DEFAULT, 40)
-COMBO(rpar,   &kp RPAR,     17 18, DEFAULT, 40)
-COMBO(lbkt,   &kp LBKT,     12 13, DEFAULT, 40)
-COMBO(rbkt,   &kp RBKT,     16 17, DEFAULT, 40)
-COMBO(lbrc,   &kp LBRC,     11 13, DEFAULT, 40)
-COMBO(rbrc,   &kp RBRC,     16 18, DEFAULT, 40)
+COMBO(lpar,   &kp LPAR,     2 3, DEFAULT, 40)
+COMBO(rpar,   &kp RPAR,     6 7, DEFAULT, 40)
+COMBO(lbkt,   &kp LBKT,     1 2, DEFAULT, 40)
+COMBO(rbkt,   &kp RBKT,     7 8, DEFAULT, 40)
+COMBO(lbrc,   &kp LBRC,     1 3, DEFAULT, 40)
+COMBO(rbrc,   &kp RBRC,     6 8, DEFAULT, 40)
 COMBO(capswd, &caps_word,   13 16, DEFAULT, 60)
 
   };
