@@ -7,4 +7,4 @@
 #include "../../../layers.h"
 #include "../../../home_row_mods.dtsi"
 #include "../../../combos.dtsi"
-#include "../../../miryoku_36.keymap"
+#include "../../../miryoku_36_flipped.keymap"
