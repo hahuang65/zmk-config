@@ -1,0 +1,23 @@
+if SHIELD_WATERFOWL_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Waterfowl"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+  default y
+
+endif
+
+if SHIELD_WATERFOWL_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Waterfowl Right"
+
+endif
+
+if SHIELD_WATERFOWL_LEFT || SHIELD_WATERFOWL_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
