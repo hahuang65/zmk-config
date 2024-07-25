@@ -1,3 +1,4 @@
+---
 name: Build
 on:
   - push
@@ -10,19 +11,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build nice!60
-        run:  make BOARD=nice60
+        run: make BOARD=nice60
       - name: Build Polarity Works BT60
-        run:  make BOARD=bt60
+        run: make BOARD=bt60
       - name: Build Lily58
-        run:  make BOARD=lily58
+        run: make BOARD=lily58
       - name: Build ErgoTravel
-        run:  make BOARD=ergotravel
+        run: make BOARD=ergotravel
       - name: Build Arch36
-        run:  make BOARD=arch36
+        run: make BOARD=arch36
       - name: Build Arch36T
-        run:  make BOARD=arch36t
+        run: make BOARD=arch36t
       - name: Build Chocofi
-        run:  make BOARD=chocofi
+        run: make BOARD=chocofi
+      - name: Build Corneish Zen
+        run: make BOARD=corneish-zen
+      - name: Build Waterfowl
+        run: make BOARD=waterfowl
       - name: Archive firmware
         uses: actions/upload-artifact@v2
         with:
