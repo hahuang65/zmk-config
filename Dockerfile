@@ -40,5 +40,6 @@ COPY boards/corneish-zen/corneish_zen* config/
 # Waterfowl
 COPY boards/waterfowl config/boards/shields/waterfowl
 COPY boards/waterfowl/waterfowl.conf config/
+RUN rm -rf /root/zmk/app/boards/shields/waterfowl
 
 CMD ./scripts/build_${BOARD}
