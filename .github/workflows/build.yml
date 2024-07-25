@@ -1,36 +1,33 @@
 ---
 name: Build
-on:
+on:  # yamllint disable-line rule:truthy
   - push
   - pull_request
   - workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        board:
+          - nice60
+          - bt60
+          - lily58
+          - ergotravel
+          - arch36
+          - arch36t
+          - chocofi
+          - corneish-zen
+          - waterfowl
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Build nice!60
-        run: make BOARD=nice60
-      - name: Build Polarity Works BT60
-        run: make BOARD=bt60
-      - name: Build Lily58
-        run: make BOARD=lily58
-      - name: Build ErgoTravel
-        run: make BOARD=ergotravel
-      - name: Build Arch36
-        run: make BOARD=arch36
-      - name: Build Arch36T
-        run: make BOARD=arch36t
-      - name: Build Chocofi
-        run: make BOARD=chocofi
-      - name: Build Corneish Zen
-        run: make BOARD=corneish-zen
-      - name: Build Waterfowl
-        run: make BOARD=waterfowl
+        uses: actions/checkout@master
+      - name: Build ${{ matrix.board }}
+        run: make BOARD=${{ matrix.board }}
       - name: Archive firmware
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@master
         with:
-          name: zmk-firmware
+          name: zmk-firmware-${{ matrix.board }}
           path: |
             build/*.uf2
