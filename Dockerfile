@@ -28,11 +28,17 @@ COPY boards/lily58/lily58* config/
 
 # Arch36
 COPY boards/arch36 config/boards/shields/arch36
+COPY boards/arch36/arch36.conf config/
 
 # Chocofi
 COPY boards/chocofi config/boards/shields/chocofi
+COPY boards/chocofi/chocofi.conf config/
 
 # Corneish-Zen
 COPY boards/corneish-zen/corneish_zen* config/
+
+# Waterfowl
+COPY boards/waterfowl config/boards/shields/waterfowl
+COPY boards/waterfowl/waterfowl.conf config/
 
 CMD ./scripts/build_${BOARD}
