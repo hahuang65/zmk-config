@@ -1,0 +1,12 @@
+---
+manifest:
+  remotes:
+    - name: bravekarma
+      url-base: https://github.com/caksoylar
+  projects:
+    - name: zmk
+      remote: bravekarma
+      revision: caksoylar/experimental  # https://github.com/zmkfirmware/zmk/pull/2027#issuecomment-2231678922
+      import: app/west.yml
+  self:
+    path: config

@@ -1,0 +1,34 @@
+#include <behaviors.dtsi>
+
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 35
+
+/ {
+  behaviors {
+    volume_encoder: volume_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+    };
+
+    zoom_encoder: zoom_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp C_AC_ZOOM_IN>, <&kp C_AC_ZOOM_OUT>;
+      tap-ms = <30>
+    };
+
+    vert_scroll_encoder: vert_scroll_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+      tap-ms = <30>
+    };
+
+    hori_scroll_encoder: hori_scroll_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+      tap-ms = <30>
+    };
+  };
+};
