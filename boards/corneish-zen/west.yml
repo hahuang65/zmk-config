@@ -1,3 +1,4 @@
+---
 manifest:
   remotes:
     - name: bravekarma
@@ -5,7 +6,8 @@ manifest:
   projects:
     - name: zmk
       remote: bravekarma
-      revision: caksoylar/zen-v2 # https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a
+      # https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a
+      revision: caksoylar/zen-v1+v2
       import: app/west.yml
   self:
     path: config
