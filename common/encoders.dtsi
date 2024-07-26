@@ -1,4 +1,4 @@
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 35
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -12,6 +12,14 @@
       tap-ms = <30>;
     };
 
+    media_encoder: media_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp C_FF>, <&kp C_RW>;
+      tap-ms = <30>;
+    };
+
+    // Currently, this doesn't seem to work or do anything
     zoom_encoder: zoom_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
@@ -22,14 +30,16 @@
     vert_scroll_encoder: vert_scroll_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+      // SCRL_* follows mouse focus...
+      // bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+      bindings = <&kp PG_UP>, <&kp PG_DN>;
       tap-ms = <30>;
     };
 
     hori_scroll_encoder: hori_scroll_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+      bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
       tap-ms = <30>;
     };
   };

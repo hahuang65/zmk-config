@@ -23,10 +23,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &lt MEDIA ESC   &lt NAV SPC     &lt MOUSE TAB   &trans              &kp C_MUTE      &lt SYM RET     &lt NUM BSPC    &lt FUN DEL     &kp C_AC_ZOOM
+	   &trans          &lt MEDIA ESC   &lt NAV SPC     &lt MOUSE TAB   &trans              &kp C_MUTE      &lt SYM RET     &lt NUM BSPC    &lt FUN DEL     &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
     };
 
     media_layer {
@@ -39,10 +39,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &none           &none           &none           &none           &none               &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp C_STOP      &kp C_PP        &kp C_MUTE      &kp C_AC_ZOOM
+	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp C_STOP      &kp C_PP        &kp C_MUTE      &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
     };
 
     nav_layer {
@@ -55,10 +55,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &none           &none           &none           &none           &none               &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &kp INSERT
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_AC_ZOOM
+	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
     };
 
     /* This needs to be implemented when mouse keys hits ZMK's main branch */
@@ -72,10 +72,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &none           &none           &none           &none           &none               &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &kp INSERT
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_AC_ZOOM
+	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
 		};
 
 		sym_layer {
@@ -88,10 +88,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &kp TILDE       &kp EXCL        &kp AT          &kp POUND       &kp PIPE            &none           &none           &none           &none           &none
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-     &trans          &kp LPAR        &kp RPAR        &kp UNDER        &trans             &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
+     &trans          &kp LPAR        &kp RPAR        &kp UNDER        &trans             &kp C_MUTE      &none           &none           &none           &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
 		};
 
 		num_layer {
@@ -104,10 +104,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 	   &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp BSLH            &none           &none           &none           &none           &none
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &kp DOT         &kp N0          &kp MINUS       &trans              &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
+	   &trans          &kp DOT         &kp N0          &kp MINUS       &trans              &kp C_MUTE      &none           &none           &none           &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
 		};
 
 		fun_layer {
@@ -120,10 +120,10 @@
 // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
    	 &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK     &none           &none           &none          &none            &none
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-	   &trans          &kp K_CMENU     &kp SPC         &kp TAB         &trans              &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
+	   &trans          &kp K_CMENU     &kp SPC         &kp TAB         &trans              &kp C_MUTE      &none           &none           &none           &kp C_PP
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &media_encoder &volume_encoder>;
 		};
   };
 };
