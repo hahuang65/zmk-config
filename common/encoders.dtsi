@@ -8,13 +8,14 @@
     volume_encoder: volume_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+      bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>;
+      tap-ms = <30>;
     };
 
     zoom_encoder: zoom_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&kp C_AC_ZOOM_IN>, <&kp C_AC_ZOOM_OUT>;
+      bindings = <&kp C_AC_ZOOM_OUT>,<&kp C_AC_ZOOM_IN>;
       tap-ms = <30>;
     };
 

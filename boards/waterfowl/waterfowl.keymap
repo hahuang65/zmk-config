@@ -26,7 +26,7 @@
 	   &trans          &lt MEDIA ESC   &lt NAV SPC     &lt MOUSE TAB   &trans              &kp C_MUTE      &lt SYM RET     &lt NUM BSPC    &lt FUN DEL     &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
     };
 
     media_layer {
@@ -42,7 +42,7 @@
 	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp C_STOP      &kp C_PP        &kp C_MUTE      &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
     };
 
     nav_layer {
@@ -58,7 +58,7 @@
 	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
     };
 
     /* This needs to be implemented when mouse keys hits ZMK's main branch */
@@ -75,7 +75,7 @@
 	   &trans          &none           &none           &none           &trans              &kp C_MUTE      &kp RET         &kp BSPC        &kp DEL         &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
 		};
 
 		sym_layer {
@@ -91,7 +91,7 @@
      &trans          &kp LPAR        &kp RPAR        &kp UNDER        &trans             &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
 		};
 
 		num_layer {
@@ -107,7 +107,7 @@
 	   &trans          &kp DOT         &kp N0          &kp MINUS       &trans              &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
 		};
 
 		fun_layer {
@@ -123,7 +123,7 @@
 	   &trans          &kp K_CMENU     &kp SPC         &kp TAB         &trans              &kp C_MUTE      &none           &none           &none           &kp C_AC_ZOOM
 // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
 >;
-    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &volume_encoder &zoom_encoder>;
+    sensor-bindings = <&hori_scroll_encoder &vert_scroll_encoder &zoom_encoder &volume_encoder>;
 		};
   };
 };
