@@ -3,7 +3,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 
+#include "layers.h"
+
 / {
+  macros {
+      mac_layer: mac_layer {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&bt BT_SEL 1>
+              , <&to MAC>
+              ;
+      };
+  };
+
   behaviors {
     volume_encoder: volume_encoder {
       compatible = "zmk,behavior-sensor-rotate";
@@ -19,12 +32,18 @@
       tap-ms = <30>;
     };
 
-    // Currently, this doesn't seem to work or do anything
     zoom_encoder: zoom_encoder {
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
-      bindings = <&kp C_AC_ZOOM_OUT>,<&kp C_AC_ZOOM_IN>;
-      tap-ms = <30>;
+      bindings = <&kp LC(EQUAL)>,<&kp LC(MINUS)>;
+      tap-ms = <50>;
+    };
+
+    mac_zoom_encoder: mac_zoom_encoder {
+      compatible = "zmk,behavior-sensor-rotate";
+      #sensor-binding-cells = <0>;
+      bindings = <&kp LG(EQUAL)>,<&kp LG(MINUS)>;
+      tap-ms = <50>;
     };
 
     vert_scroll_encoder: vert_scroll_encoder {
