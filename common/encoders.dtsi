@@ -15,6 +15,14 @@
               , <&to MAC>
               ;
       };
+      linux_layer: linux_layer {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&bt BT_SEL 0>
+              , <&to DEFAULT>
+              ;
+      };
   };
 
   behaviors {
