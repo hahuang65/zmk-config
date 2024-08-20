@@ -23,13 +23,13 @@
   combos {
     compatible = "zmk,combos";
 
-COMBO(lpar,   &kp LPAR,     2 3, DEFAULT, 20)
-COMBO(rpar,   &kp RPAR,     6 7, DEFAULT, 20)
-COMBO(lbkt,   &kp LBKT,     1 2, DEFAULT, 20)
-COMBO(rbkt,   &kp RBKT,     7 8, DEFAULT, 20)
-COMBO(lbrc,   &kp LBRC,     1 3, DEFAULT, 20)
-COMBO(rbrc,   &kp RBRC,     6 8, DEFAULT, 20)
-COMBO(capswd, &caps_word,   13 16, DEFAULT, 60)
+COMBO(lpar,   &kp LPAR,     2 3, DEFAULT MAC, 20)
+COMBO(rpar,   &kp RPAR,     6 7, DEFAULT MAC, 20)
+COMBO(lbkt,   &kp LBKT,     1 2, DEFAULT MAC, 20)
+COMBO(rbkt,   &kp RBKT,     7 8, DEFAULT MAC, 20)
+COMBO(lbrc,   &kp LBRC,     1 3, DEFAULT MAC, 20)
+COMBO(rbrc,   &kp RBRC,     6 8, DEFAULT MAC, 20)
+COMBO(capswd, &caps_word,   13 16, DEFAULT MAC, 60)
 
   };
 };
