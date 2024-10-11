@@ -5,4 +5,5 @@
 #define SYM 4
 #define NUM 5
 #define FUN 6
-#define MAC 7
+#define GAME 7
+#define MAC 8
