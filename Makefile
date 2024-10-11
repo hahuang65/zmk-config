@@ -1,4 +1,3 @@
-SHELL:=/bin/bash
 .PHONY: build clean
 
 IMAGE=zmk-config
