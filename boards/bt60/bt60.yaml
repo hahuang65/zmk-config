@@ -1,5 +1,6 @@
-identifier: bt60
-name: bt60
+---
+identifier: bt60_v1_hs
+name: BT60 V1 Hotswap
 type: mcu
 arch: arm
 toolchain:

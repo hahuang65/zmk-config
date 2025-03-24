@@ -1,7 +1,7 @@
 # Copyright (c) 2021 Polarity Works
 # SPDX-License-Identifier: MIT
 
-if BOARD_BT60
+if BOARD_BT60_V1_HS
 
 config BOARD
 	default "bt60"
@@ -18,15 +18,6 @@ endif # USB
 
 config BT_CTLR
 	default BT
-
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
 
 config ZMK_KEYBOARD_NAME
 	default "BT60"
