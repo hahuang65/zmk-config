@@ -36,7 +36,7 @@
       "KC_BSLS",
       "KC_HOME",
       "KC_END",
-      "MT(MOD_LCTL,KC_ESC)",
+      "KC_LCTL",
       "KC_A",
       "KC_S",
       "KC_D",
