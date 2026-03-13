@@ -1,0 +1,17 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
+
+#include "arch36.dtsi"
+
+&kscan {
+    // Replace these comments with the GPIO pins in the matrix for the left side.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
+    col-gpios
+        = <&pro_micro_a  0 GPIO_ACTIVE_HIGH>
+        , <&pro_micro_d 15 GPIO_ACTIVE_HIGH>
+        , <&pro_micro_d 14 GPIO_ACTIVE_HIGH>
+        , <&pro_micro_d 16 GPIO_ACTIVE_HIGH>
+        , <&pro_micro_d 10 GPIO_ACTIVE_HIGH>
+        ;
+};

@@ -1,3 +1,5 @@
-.image
-build/
-tags
+
+.zmk/
+.west-cache/
+.act-artifacts/
+firmware/

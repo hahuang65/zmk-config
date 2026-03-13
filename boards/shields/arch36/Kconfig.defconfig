@@ -1,0 +1,16 @@
+if SHIELD_ARCH36_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "arch36"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_ARCH36_LEFT
+
+if SHIELD_ARCH36_LEFT || SHIELD_ARCH36_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_ARCH36_LEFT || SHIELD_ARCH36_RIGHT

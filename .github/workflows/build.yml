@@ -1,33 +1,6 @@
----
-name: Build
-on:  # yamllint disable-line rule:truthy
-  - push
-  - pull_request
-  - workflow_dispatch
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      matrix:
-        board:
-          - nice60
-          - bt60
-          - lily58
-          - ergotravel
-          - arch36
-          - arch36t
-          - chocofi
-          - corneish-zen
-          - waterfowl
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Build ${{ matrix.board }}
-        run: make BOARD=${{ matrix.board }}
-      - name: Archive firmware
-        uses: actions/upload-artifact@master
-        with:
-          name: zmk-firmware-${{ matrix.board }}
-          path: |
-            build/*.uf2
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main

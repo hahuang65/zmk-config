@@ -1,0 +1,5 @@
+config SHIELD_ARCH36_LEFT
+    def_bool $(shields_list_contains,arch36_left)
+
+config SHIELD_ARCH36_RIGHT
+    def_bool $(shields_list_contains,arch36_right)

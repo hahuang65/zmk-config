@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+usage() {
+  echo "Usage: $(basename "$0")"
+  echo
+  echo "Build ZMK firmware locally using the same GitHub Action as CI."
+  echo "Requires: act (https://github.com/nektos/act)"
+}
+
+if [[ ${1:-} == "--help" ]] || [[ ${1:-} == "-h" ]]; then
+  usage
+  exit 0
+fi
+
+if ! command -v act &>/dev/null; then
+  echo "Error: act is not installed. Install it from https://github.com/nektos/act"
+  exit 1
+fi
+
+cd "$SCRIPT_DIR"
+rm -rf firmware
+act -W .github/workflows/build.yml --artifact-server-path .act-artifacts || true
+
+# Extract and flatten artifacts into firmware/
+mkdir -p firmware
+find .act-artifacts -name '*.zip' -exec unzip -o -j {} '*.uf2' -d firmware \;
+rm -rf .act-artifacts
+
+# Clean up artifact names (remove //zmk qualifiers)
+for f in firmware/*.uf2; do
+  name=$(basename "$f" | sed 's/__zmk//g; s/-zmk\.uf2/.uf2/')
+  [ "$(basename "$f")" != "$name" ] && mv "$f" "firmware/$name"
+done
+
+echo
+echo "Firmware:"
+ls firmware/*.uf2 2>/dev/null
