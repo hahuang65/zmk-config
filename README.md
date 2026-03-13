@@ -63,6 +63,11 @@ firmware/corneish_zen_left.uf2
 firmware/corneish_zen_right.uf2
 ```
 
+## Other Keyboards
+
+The `via/` directory contains configuration for the W70 keyboard, which uses
+[VIA](https://usevia.app/) instead of ZMK. See `via/README.md` for details.
+
 ## Flashing
 
 Copy the `.uf2` file to the keyboard's USB mass storage device:
