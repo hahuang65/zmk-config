@@ -27,6 +27,6 @@ include:
     shield: waterfowl_left
   - board: nice_nano//zmk
     shield: waterfowl_right
-  - board: bt60//zmk
+  - board: bt60_hs//zmk
   - board: corneish_zen_left//zmk
   - board: corneish_zen_right//zmk

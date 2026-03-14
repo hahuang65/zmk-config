@@ -26,8 +26,10 @@ act -W .github/workflows/build.yml --artifact-server-path .act-artifacts || true
 
 # Extract and flatten artifacts into firmware/
 mkdir -p firmware
-find .act-artifacts -name '*.zip' -exec unzip -o -j {} '*.uf2' -d firmware \;
-rm -rf .act-artifacts
+if [ -d .act-artifacts ]; then
+  find .act-artifacts -name '*.zip' -exec unzip -o -j {} '*.uf2' -d firmware \;
+  rm -rf .act-artifacts
+fi
 
 # Clean up artifact names (remove //zmk qualifiers)
 for f in firmware/*.uf2; do
